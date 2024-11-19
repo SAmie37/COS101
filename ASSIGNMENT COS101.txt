@@ -1,0 +1,55 @@
+
+    # 1. Addition
+def a():
+    num1 = float(input("Enter the first number for addition: "))
+    num2 = float(input("Enter the second number for addition: "))
+    print(f"The result of addition is: {num1 + num2}")
+
+    # 2. Subtraction
+def b():
+    num1 = float(input("Enter the number to subtract from: "))
+    num2 = float(input("Enter the number to subtract: "))
+    print(f"The result of subtraction is: {num1 - num2}")
+
+    # 3. Multiplication
+def c():
+    num1 = float(input("Enter the first number for multiplication: "))
+    num2 = float(input("Enter the second number for multiplication: "))
+    print(f"The result of multiplication is: {num1 * num2}")
+
+    # 4. Division
+def d():
+    num1 = float(input("Enter the dividend: "))
+    num2 = float(input("Enter the divisor: "))
+    if num2 != 0:
+        print(f"The result of division is: {num1 / num2}")
+    else:
+        print("Division by zero is not allowed!")
+
+    # 5. Physics Operation (Force Calculation: F = m * a)
+def e():
+    mass = float(input("Enter mass (in g): "))
+    acceleration = float(input("Enter acceleration (in m/s^2): "))
+    force = mass * acceleration
+    print(f"The calculated force is: {force} N")
+
+
+def main():
+    user_choice =  input("what would you like to perform master ")
+    if user_choice == "a":
+        a()
+    elif user_choice == "b":
+        b()
+    elif user_choice == "c":
+        c()
+    elif user_choice == "d":
+        d()
+    elif user_choice == "e":
+        e()
+    else:
+        print("invalid input")
+
+
+# Run the main function
+if __name__ == "__main__":
+    main()
